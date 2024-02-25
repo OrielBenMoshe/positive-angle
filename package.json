@@ -1,0 +1,38 @@
+{
+  "name": "positive-angle",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start:old": "expo start -c",
+    "start": "npx expo start --dev-client",
+    "test": "jest --watchAll",
+    "debug": "eas build -p ios --profile development-simulator && eas build --profile development --platform ios",
+    "debug:ios:sim": "eas build -p ios --profile development-simulator",
+    "debug:android:sim": "eas build -p android --profile development-simulator",
+    "debug:ios": "eas build --profile development --platform ios",
+    "debug:android": "eas build --profile development --platform android",
+    "prod:ios": "eas build --profile production --platform ios",
+    "prod:android": "eas build --profile production --platform android",
+    "android": "expo run:android",
+    "clear:android": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
+    "clear:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios'",
+    "ios": "expo run:ios"
+  },
+  "dependencies": {
+    "expo": "~50.0.7",
+    "expo-constants": "^15.4.5",
+    "expo-dev-client": "~3.3.8",
+    "expo-status-bar": "~1.11.1",
+    "expo-updates": "~0.24.11",
+    "onesignal-expo-plugin": "^2.0.2",
+    "react": "18.2.0",
+    "react-native": "0.73.4",
+    "react-native-onesignal": "^5.0.4",
+    "react-native-webview": "^13.6.4",
+    "expo-web-browser": "~12.8.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}

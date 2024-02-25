@@ -1,0 +1,78 @@
+{
+  "expo": {
+    "name": "positive-angle",
+    "slug": "positive-angle",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/adaptive-icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.positive.angle",
+      "buildNumber": "1"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android.png",
+        "backgroundColor": "#F2F2F2"
+      },
+      "package": "com.positive.angle",
+      "versionCode": 11
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "oneSignalAppId": "9f4578e7-9cb6-4227-9648-df15584e438f",
+      "eas": {
+        "build": {
+          "experimental": {
+            "ios": {
+              "appExtensions": [
+                {
+                  "targetName": "OneSignalNotificationServiceExtension",
+                  "bundleIdentifier": "com.positive.angle.OneSignalNotificationServiceExtension",
+                  "entitlements": {
+                    "com.apple.security.application-groups": [
+                      "group.com.positive.angle.onesignal"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "projectId": "a9b81895-cfb5-41f4-97e5-5fb32db94d36"
+      }
+    },
+    "plugins": [
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "development",
+          "devTeam": "P2K4MAGBT8",
+          "iPhoneDeploymentTarget": "13.0",
+          "smallIcons": [
+            "./assets/ic_stat_onesignal_default.png"
+          ],
+          "smallIconAccentColor": "#1d9b94"
+        }
+      ]
+    ],
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/a9816411-0dbc-408c-abbc-fc879c56057b"
+    },
+    "owner": "oriel.bm"
+  }
+}
